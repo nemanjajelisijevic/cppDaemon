@@ -1,6 +1,6 @@
 #include "voidclosure.h"
 
-namespace daemonize {
+namespace daemonize  {
 
     VoidClosureWrapper::VoidClosureWrapper(std::function<void(void)>&& func)
         : myCallback(std::forward<std::function<void(void)>>(func))
